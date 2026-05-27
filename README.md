@@ -1,6 +1,6 @@
 # Sapien Architecture
 
-[![Architecture Version](https://img.shields.io/badge/version-2026.05-green.svg)](#)
+[![Architecture Version](https://img.shields.io/badge/version-1.0.0-green.svg)](#)
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-yellow.svg)](LICENSE)
 
 A Didactic, Generational Framework for Neuro-Symbolic Cognitive AI. Sapien shifts the paradigm from machine *training* to machine *teaching*, decoupling statistical pattern recognition from long-term memory accumulation.
@@ -103,3 +103,7 @@ This repository represents a conceptual specification for cognitive AI architect
 ## License
 
 This project is licensed under the AGPLv3 License - see the [LICENSE](LICENSE) file for details.
+
+
+
+Last updated: 27th May 2026
