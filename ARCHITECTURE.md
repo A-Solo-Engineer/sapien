@@ -283,48 +283,34 @@ At generational handoff, the receiving generation is presented with a sample of 
 
 A single Didactic Episode is the fundamental unit of learning in Sapien.
 
-**Episode structure:**
-Episode initialisation
-↓
-Teacher selects topic
-↓
-Teacher presents subtopic chunk
-↓
-Learner attempts connection to existing knowledge graph
-↓
-┌──────────────────────────────────────────┐
-│ Connection result:                       │
-│                                          │
-│ Full connection                          │
-│ → concept moves to KNOWN status          │
-│ → WHY chain established                  │
-│                                          │
-│ Partial connection                       │
-│ → concept becomes KNOWN UNKNOWN          │
-│ → curiosity reward triggered             │
-│ → learner generates question             │
-│                                          │
-│ No connection                            │
-│ → SEED node created                      │
-│ → maximum reward signal                  │
-│ → human supervisor notified              │
-└──────────────────────────────────────────┘
-↓
-If question generated:
-Verifier checks teacher's answer
-Human supervisor reviews if flagged
-Answer stored as WHY chain extension
-↓
-Knowledge graph updated
-↓
-Episode termination check:
-Known Unknowns list empty? → Episode ends
-Else → next subtopic chunk
+### Episode Execution Pipeline
 
-**Epistemic closure:**
-An episode reaches epistemic closure when the learner's Known Unknowns list is empty for the topic. All identified gaps have been filled. SEED nodes created during the episode are marked PENDING — they await future episodes that introduce the connecting concepts.
+| Step | Phase | Action / Operational Flow |
+| :--- | :--- | :--- |
+| **1** | Initialization | Episode initialization protocol starts. |
+| **2** | Curriculum Selection | Teacher selects target topic. |
+| **3** | Knowledge Delivery | Teacher presents subtopic chunk. |
+| **4** | Graph Evaluation | Learner attempts connection to existing knowledge graph. |
+| **5** | Connection Routing | The system branches based on the connection result (see matrix below). |
+| **6** | Verification Loop | If a question is generated: Verifier checks teacher's answer $\rightarrow$ Human supervisor reviews if flagged $\rightarrow$ Answer stored as `WHY` chain extension. |
+| **7** | Commit | Knowledge graph is updated with new telemetry. |
+| **8** | Evaluation | Termination check: If the *Known Unknowns* list is empty, the episode ends; else, the loop returns to Step 3 for the next subtopic chunk. |
 
 ---
+
+### Connection Result Matrix
+
+| Condition | System Status | Downstream Actions |
+| :--- | :--- | :--- |
+| **Full Connection** | `KNOWN` | Establishes a verified `WHY` chain. |
+| **Partial Connection** | `KNOWN UNKNOWN` | Triggers a curiosity reward signal and prompts the learner to generate a clarifying question. |
+| **No Connection** | `SEED` | Spawns a baseline concept node, deploys a maximum reward signal, and alerts the human supervisor. |
+
+---
+
+### Epistemic Closure
+An episode reaches epistemic closure when the learner's *Known Unknowns* list is empty for the topic, indicating all identified gaps have been filled. `SEED` nodes created during the episode are marked `PENDING`—they await future episodes that introduce the connecting foundational concepts.
+
 
 ## 12. Knowledge Gap Map
 
