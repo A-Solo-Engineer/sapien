@@ -71,27 +71,15 @@ Human supervisors are not a temporary safety measure to be removed when the syst
 
 ## 3. Layer Overview
 
-┌──────────────────────────────────────────┐
-│ Layer 7 — Multi-Generational Error       │
-│           Correction                     │
-├──────────────────────────────────────────┤
-│ Layer 6 — Human-in-the-Loop Oversight    │
-│           (Permanent)                    │
-├──────────────────────────────────────────┤
-│ Layer 5 — Continual Generational         │
-│           Learning                       │
-├──────────────────────────────────────────┤
-│ Layer 4 — Causal Knowledge               │
-│           Representation (DAG)           │
-├──────────────────────────────────────────┤
-│ Layer 3 — 1st Generation Learner         │
-│           (Adversarial Collaboration)    │
-├──────────────────────────────────────────┤
-│ Layer 2 — Didactic Learning Engine       │
-│           (Generation 0)                 │
-├──────────────────────────────────────────┤
-│ Layer 1 — Grounded Learning Substrate    │
-└──────────────────────────────────────────┘
+| Layer | Component | Operational Mechanism |
+| :--- | :--- | :--- |
+| **Layer 7** | Multi-Generational Error Correction | Long-term dialectic filtering and alignment stability |
+| **Layer 6** | Human-in-the-Loop Oversight | Permanent ground-truth authority and system validation |
+| **Layer 5** | Continual Generational Learning | Traceable pedagogical succession from Gen $N$ to Gen $N+1$ |
+| **Layer 4** | Causal Knowledge Representation | Immutable Direct Acyclic Graphs (DAG) storing `WHAT+WHY+SOURCE` |
+| **Layer 3** | 1st Generation Learner | Dual-instance persona routing via adversarial collaboration |
+| **Layer 2** | Didactic Learning Engine | Base training environment powered by Generation 0 Teachers |
+| **Layer 1** | Grounded Learning Substrate | Live interaction stream and real-time environment intake |
 
 ---
 
