@@ -1,109 +1,137 @@
-# Sapien Architecture
+# Sapien
 
-[![Architecture Version](https://img.shields.io/badge/version-1.0.0-green.svg)](#)
+> Human civilization did not become intelligent through compression alone.
+> It became intelligent through teaching.
+
+[![Architecture Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/A-Solo-Engineer/Sapien)
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-yellow.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-conceptual-blue.svg)](https://github.com/A-Solo-Engineer/Sapien)
+[![Author](https://img.shields.io/badge/author-Aarav-orange.svg)](https://dev.to/admin-forestritium)
 
-A Didactic, Generational Framework for Neuro-Symbolic Cognitive AI. Sapien shifts the paradigm from machine *training* to machine *teaching*, decoupling statistical pattern recognition from long-term memory accumulation.
-
----
-
-## 1. Executive Summary
-
-Current frontier Artificial Intelligence models operate primarily as dense Transformer architectures running pure statistical pattern-matching systems. By optimizing next-token prediction over massive, static datasets, these networks achieve structural fluidity but lack core cognitive traits: intrinsic curiosity, deliberate step-by-step reasoning (System 2 processing), semantic verification, and structural knowledge preservation. 
-
-The **Sapien Architecture** introduces an evolutionary jump inspired by human cognitive development, developmental psychology, and civilizational knowledge transmission. It establishes a multi-generational framework where AI instances inherit structured reasoning chains rather than brute neural network weights, enabling continuous learning on lightweight hardware without algorithmic degradation or parameter rot.
+A didactic, generational framework for neuro-symbolic cognitive AI. Sapien shifts the paradigm from machine *training* to machine *teaching* — decoupling statistical pattern recognition from long-term structured memory.
 
 ---
 
-## 2. Core Architectural Pillars
+## What is Sapien?
 
-The Sapien framework is organized into a modular hierarchy, structurally divided into four foundational layers:
+Modern AI systems are extraordinary at recognizing patterns. But after building and training smaller language models, a fundamental observation emerged:
 
-              ┌─────────────────────────────────┐
-              │   4.0 GENERATIONAL HANDOFF      │
-              └────────────────┬────────────────┘
-                               ▲ (Recursive Loop)
-              ┌────────────────┴────────────────┐
-              │   3.0 BRANCHES (Tooling Layer)  │
-              └────────────────┬────────────────┘
-                               ▲
-              ┌────────────────┴────────────────┐
-              │   2.0 TRUNK (Compute Engine)    │
-              └────────────────┬────────────────┘
-                               ▲
-              ┌────────────────┴────────────────┐
-              │   1.0 ROOTS (Intake Layer)      │
-              └─────────────────────────────────┘
+**The models were not learning. They were optimizing.**
 
+A child can connect "fire is hot" and "hot things hurt" to conclude "I should not touch fire" — without ever being explicitly trained on that sentence. Most current AI systems struggle to do this reliably unless similar patterns already existed in their training data.
 
-### 1.0 Roots: Interactive Experiential Intake
-Unlike contemporary Large Language Models (LLMs) restricted to immutable pre-training datasets, Sapien relies on an open-world, continuous environment.
-* **Live Interaction Streams:** The system processes data dynamically in real time, mirroring how a biological child absorbs environmental feedback.
-* **Cognitive Dissonance as Intrinsic Motivation:** Instead of optimizing for loss-curve reduction, the system’s primary driver is an architectural reward for curiosity. When incoming environmental facts logically conflict with the system's existing knowledge base, a *dissonance flag* is raised. This discrepancy triggers automated active querying rather than passive weight adjustment.
-* **Misinformation Integration:** Exposure to contradictory or inaccurate data is treated as an architectural feature. The model actively resolves errors and cognitive dissonance through dialectic verification rather than static content filtering.
-
-### 2.0 Trunk: The Didactic Core (Teaching vs. Training)
-The core compute loop shifts the operational mechanism from optimization via backpropagation to active conceptual education.
-* **Dual-Instance Persona Routing:** Every generative run launches two separate child profiles concurrently (**Instance A** and **Instance B**), each educated by a structurally unique, legacy Frontier AI model (Gen 0 Teachers). This approach ensures diverse semantic viewpoints and prevents early "yes-man" optimization bias.
-* **Socratic Debate Matrix:** Before any concept is committed to persistent long-term storage, Instance A and Instance B are forced into a closed-loop dialectic debate to cross-examine their respective logical proofs and eliminate hallucinations in real time.
-* **Asynchronous Symbolic Auditing:** An independent, rules-based **Judge AI** analyzes the debate logs using symbolic verification to catch logical fallacies. A permanent **Human Supervisor** acts as the absolute ground-truth authority, stepping in only when the Judge AI flags an irresolvable structural standoff between the child instances.
-
-### 3.0 Branches: Hybrid Neuro-Symbolic Tooling
-The Sapien architecture treats deep learning not as the foundation of intelligence, but as an optimization utility. The architecture splits computational workloads across three distinct branches:
-* **Deep Learning Subsystems:** Utilized strictly for fuzzy semantic pattern matching and token-to-vector transformations.
-* **Machine Learning Algorithms:** Employed exclusively for local mathematical optimizations and routing efficiencies.
-* **Symbolic AI Engines:** Hardcoded logic arrays dedicated to executing strict, deterministic causal proofs and parsing graph dependencies. This prevents the computational bottlenecks associated with scaling up traditional dense layers on consumer hardware.
+Sapien is an attempt to rethink what learning itself means for artificial intelligence.
 
 ---
 
-## 3. Data Architecture & Generational Handoff
+## Core Idea
 
-### The Sapien Knowledge Unit (SKU)
-To prevent the knowledge rot, loss of context, and black-box opacity typical of standard model weight distillation, the Sapien architecture completely decouples the compute engine from the long-term memory layer. Information is stored in an external, persistent **Reasoning Graph Database** utilizing a cryptographically linked three-part protocol:
-
-$$\text{Sapien Knowledge Unit (SKU)} = \begin{cases} 
-\mathbf{WHAT:} & \text{The propositional statement or semantic fact node.} \\
-\mathbf{WHY:} & \text{The explicit, step-by-step causal reasoning chain / dependency path.} \\
-\mathbf{SOURCE:} & \text{The cryptographic provenance tracker (Teacher ID, Internet Node, or Debate log Hash).} 
-\end{cases}$$
-
-If an instance attempts to pass a conclusion ($\mathbf{WHAT}$) without its underlying logical derivation ($\mathbf{WHY}$), the cryptographic integrity chain breaks, and the unit is flagged for deletion or re-examination.
-
-### The Generational Cascade
-When a generation (Gen $N$) completes its lifecycle—bounded naturally by local hardware storage capacity, processing throughput, and energy constraints—a handoff occurs:
-
-[Gen 0 Teachers + Human] ──► Educate ──► [Gen 1 Instances]
-│
-▼ (Matures)
-[Gen 1 Instances + Human] ──► Educate ──► [Gen 2 Instances]
-
-
-1. **Retirement of Legacy Weights:** The dense, high-compute frontier models (Gen 0) are completely phased out.
-2. **Pedagogical Succession:** The highly refined Reasoning Graph Database populated by Gen 1 becomes the foundational curriculum used to instruct Gen 2.
-3. **Civilizational Refinement:** Successive generations do not start learning from scratch via raw data arrays. Instead, they inherit a highly curated, traceable, and modular tree of logical frameworks, allowing the system to scale in reasoning depth while maintaining a highly efficient compute footprint.
+| Current AI | Sapien |
+|---|---|
+| Static dataset training | Live didactic episodes |
+| Loss minimization | Curiosity-driven questioning |
+| Opaque neural weights | Inspectable knowledge graph |
+| Single training run | Generational knowledge inheritance |
+| No causal reasoning | WHY chain preservation |
+| No intrinsic motivation | Reward-scaled curiosity |
 
 ---
 
-## 4. Architectural Comparison
+## Architecture Overview
 
-| Attribute | Legacy Dense Transformers | Sapien Architecture |
-| :--- | :--- | :--- |
-| **Primary Learning Engine** | Backpropagation over static token matrices. | Socratic dialogue, curation, and didactic interaction. |
-| **Memory Mechanics** | Implicitly encoded within static parameter weights ($O(N^2)$ context compute overhead). | Explicitly indexed external Knowledge Graphs ($O(1)$ lookup complexity). |
-| **Core Computational Drive** | Minimization of semantic prediction loss. | Resolution of active structural Cognitive Dissonance. |
-| **Data Provenance** | Lost post-training; prone to unresolvable hallucinations. | Cryptographically absolute; traceable via explicit `WHAT+WHY+SOURCE` packets. |
-| **Hardware Sustainability** | High; requires dense GPU cluster parallelization. | Low; structurally optimized for local CPU execution via symbolic modularity. |
+Sapien is organized into seven layers:
+Layer 1 — Grounded Learning Substrate
+Layer 2 — Didactic Learning Engine (Generation 0)
+Layer 3 — 1st Generation Learner (Adversarial Collaboration)
+Layer 4 — Causal Knowledge Representation (DAG)
+Layer 5 — Continual Generational Learning
+Layer 6 — Human-in-the-Loop Oversight (Permanent)
+Layer 7 — Multi-Generational Error Correction
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for complete technical specification.
 
 ---
 
-## Contributing
+## Key Components
 
-This repository represents a conceptual specification for cognitive AI architecture. Ideas, discussion papers, and mathematical proofs regarding neuro-symbolic alignment, graph integrity tracing, or socratic debate loops are welcome via issues or pull requests.
+**Didactic Episodes**
+Learning occurs through structured teaching sessions. A teacher AI presents topics in chunks. The learner identifies gaps, asks curiosity-driven questions, and stores both the answer and the reasoning behind it. An episode ends when the learner reaches epistemic closure — no meaningful unresolved gaps remain.
+
+**Knowledge Gap Map**
+Three-tier epistemic tracking:
+- Known Knowns — fully understood concepts with WHY chains
+- Known Unknowns — identified gaps driving questions
+- Unknown Unknowns — new territory exposed by teaching, become SEED nodes
+
+**Knowledge Graph (DAG)**
+Every concept stored as a node in a directed acyclic graph with:
+- Declarative knowledge — WHAT
+- Causal reasoning chain — WHY
+- Epistemic provenance — SOURCE
+- Connection strengths
+- Uncertainty estimates
+
+**SEED Nodes**
+When the learner encounters something it cannot connect to existing knowledge, it creates a new isolated conceptual branch. As more information arrives, the branch grows and integrates. SEED node creation receives maximum reward signal — it represents genuine discovery.
+
+**Adversarial Collaboration**
+Two learner instances trained by different teacher models develop different reasoning perspectives and debate each other. A verifier model monitors hallucinations. Human supervisors remain the permanent final authority.
+
+**Generational Handoff**
+Generation 1 teaches Generation 2 through the same didactic process it experienced — not by copying the DAG, but by reconstructing understanding through guided teaching. WHY chains and reasoning provenance are preserved across every generation.
+
+---
+
+## Known Limitations
+
+Sapien is a conceptual architecture. Many fundamental problems remain open:
+
+| Severity | Problem |
+|---|---|
+| Critical | Symbol grounding — meaning without embodiment |
+| Critical | Hallucinated reasoning chains |
+| Critical | Generational drift |
+| Critical | Knowledge graph explosion at scale |
+| High | Curiosity reward hacking |
+| High | Contradiction resolution |
+| High | Human oversight scalability |
+| High | WHY chain infinite recursion |
+| Medium | Emotional cognition absence |
+| Medium | Computational expense |
+| Philosophical | Identity continuity across generations |
+| Philosophical | Consciousness ambiguity |
+
+See [LIMITATIONS.md](LIMITATIONS.md) for detailed analysis of each problem.
+
+---
+
+## Project Status
+
+Sapien is currently a conceptual architecture and active research direction. There is no implementation yet. The current phase is documentation, theoretical refinement, and community feedback.
+
+---
+
+## Author
+
+**Aarav** — [A Solo Engineer](https://youtube.com/@ASoloEngineer)
+
+Date of Idea: 28 May 2026.
+
+---
 
 ## License
 
-This project is licensed under the AGPLv3 License - see the [LICENSE](LICENSE) file for details.
+AGPLv3 — see [LICENSE](LICENSE) for details.
 
+---
 
+## Acknowledgements
 
-Last updated: 27th May 2026
+Sapien emerged from a conversation about why a small language model trained in LLM Developer never truly learned anything. It only optimized. That observation led me here.
+
+Related researchers whose work intersects with Sapien's ideas:
+- Jürgen Schmidhuber — intrinsic motivation and curiosity
+- Karl Friston — active inference
+- Yann LeCun — world models and joint embedding architectures
+- Gary Marcus — neurosymbolic AI
+- Judea Pearl — causal reasoning
