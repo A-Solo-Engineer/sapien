@@ -81,5 +81,7 @@ If you want to be notified when implementation begins:
 
 ---
 
-*Sapien — AGPLv3 — 29 May 2026*
+## Sapien
+*License: AGPLv3*
+*Last update: 29 May 2026*
 *Author: Aarav — A Solo Engineer*

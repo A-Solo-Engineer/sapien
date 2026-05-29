@@ -169,6 +169,7 @@ Regardless of where the roadmap goes:
 
 ---
 
-*Roadmap last updated: 29 May 2026 — Phase 1 marked complete*
-*Sapien — AGPLv3*
-*Author: Aarav — A Solo Engineer*
+### Sapien
+*Roadmap last updated: 29 May 2026 | Phase 1 marked complete* 
+*License: AGPLv3* 
+*Author: Aarav | Forestritium*

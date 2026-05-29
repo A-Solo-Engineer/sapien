@@ -294,6 +294,10 @@ are not helpful.
 
 ---
 
-*Sapien — AGPLv3 — Contributions welcome*
+### Sapien 
+*License: AGPLv3* 
+*Contributions welcome*
 
-*Author: Aarav* | **Forestritium**
+Last updated: 29 May 2026 
+
+**Author: Aarav** | ***Forestritium***

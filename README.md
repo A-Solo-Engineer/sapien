@@ -158,9 +158,11 @@ Areas where contribution is most needed:
 
 ## Author
 
-**Aarav** | Forestritium
+**Aarav** | ***Forestritium***
 
-Date of Idea: 28 May 2026.
+***Date of Idea: 28 May 2026.***
+
+***Last updated: 29 May 2026.***
 
 ---
 
