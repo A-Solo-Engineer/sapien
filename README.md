@@ -39,6 +39,8 @@ Sapien is an attempt to rethink what learning itself means for artificial intell
 
 ## Architecture Overview
 
+![Sapien Architecture](assets/architecture.svg)
+
 Sapien is organized into seven layers:
 Layer 1 — Grounded Learning Substrate
 Layer 2 — Didactic Learning Engine (Generation 0)
